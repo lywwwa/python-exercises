@@ -1,0 +1,108 @@
+2020-04-21 10:18:57,730 ERROR: Exception on /index [GET] [in c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\engin\Documents\projects\python-exercises\microblog\app\routes.py", line 24, in index
+    return render_template('index.html', title='Home', posts=posts)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\engin\Documents\projects\python-exercises\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\engin\Documents\projects\python-exercises\microblog\app\templates\base.html", line 65, in template
+    {% endif %}
+TemplateSyntaxError: Encountered unknown tag 'endif'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endwith'. The innermost block that needs to be closed is 'with'.
+2020-04-21 10:18:58,020 ERROR: Exception on /favicon.ico [GET] [in c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "C:\Users\engin\Documents\projects\python-exercises\microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 404
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\engin\Documents\projects\python-exercises\microblog\app\templates\404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\engin\Documents\projects\python-exercises\microblog\app\templates\base.html", line 65, in template
+    {% endif %}
+TemplateSyntaxError: Encountered unknown tag 'endif'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endwith'. The innermost block that needs to be closed is 'with'.
+2020-04-21 12:30:34,720 ERROR: Exception on /index [GET] [in c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\engin\Documents\projects\python-exercises\microblog\app\routes.py", line 24, in index
+    return render_template('index.html', title='Home',user=user, posts=posts)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\engin\Documents\projects\python-exercises\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\engin\Documents\projects\python-exercises\microblog\app\templates\base.html", line 59, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\engin\Documents\projects\python-exercises\microblog\app\templates\index.html", line 5, in block "content"
+    <img src="{{ user.avatar(128) }}" class="rounded mx-auto d-block">
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'user' is undefined
+2020-04-21 12:31:00,801 INFO: Microblog startup [in C:\Users\engin\Documents\projects\python-exercises\microblog\app\__init__.py:55]
+2020-04-21 12:31:26,875 ERROR: Exception on /index [GET] [in c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\engin\documents\projects\python-exercises\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+TypeError: index() takes exactly 1 argument (0 given)
+2020-04-21 12:31:35,065 INFO: Microblog startup [in C:\Users\engin\Documents\projects\python-exercises\microblog\app\__init__.py:55]

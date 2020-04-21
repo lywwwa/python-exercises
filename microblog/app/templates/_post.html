@@ -1,6 +1,15 @@
-<table>
-    <tr valign="top">
-        <td><img src="{{ post.author.avatar(36) }}"></td>
-        <td>{{ post.author.username }} says:<br>{{ post.body }}</td>
-    </tr>
-</table>
+<div class="container">
+    <div class="card border-light bg-transparent mb-3">
+        <div class="row  no-gutters">
+          <div class="text-center col-4 align-self-center">
+            <img class="rounded" src="{{ post.author.avatar(70) }}">
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+                <p class="card-text text-capitalize">{{ post.author.username }} says:</p>
+                <p class="card-text label">{{ post.body }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>

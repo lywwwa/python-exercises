@@ -1,0 +1,47 @@
+/* static/style.css */
+
+body{
+    /* font-family: 'Spartan', sans-serif; */
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: #374785;
+    color: white;
+}
+a{
+    color: #F76D6D;
+}
+a:hover{
+    color: #F76D6D;
+}
+
+/* vertical line */
+.vl{
+    border-left: 6px solid #508bb1;
+    height:100vh;
+}
+
+.label{
+    font-size: 14px;
+}
+.error{
+    color: red;
+}
+/* menu */
+.menu-link:hover{
+    background-color: rgb(122, 122, 122, 0.5);
+    text-decoration: none;
+    
+}
+
+/* profile picture */
+.profile{
+    border-radius: 50%;
+
+    &__large{
+        width: 90px;
+        height: 90px;
+    },
+    &__small{
+        width: 50px;
+        height: 50px;
+    }
+}
